@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish-to-npm:
-    if: github.repository_owner == 'nagix'
+    if: github.repository_owner == '1ucky40nc3'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
