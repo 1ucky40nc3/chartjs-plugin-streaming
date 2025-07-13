@@ -7,7 +7,7 @@ export function update(...args) {
   const element = me.getActiveElements()[0];
 
   if (element) {
-    const meta = me.chart._metasets(element.datasetIndex);
+    const meta = me.chart.getDatasetMeta(element.datasetIndex);
 
     me.$streaming = getAxisMap(me, transitionKeys, meta);
   } else {
