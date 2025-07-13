@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> This is a fork to support chart.js 4.4.1 for the [fresh_fingi](https://github.com/1ucky40nc3/fresh_fingi) project. Use this fork at your own risk!
+
 <p align="center">
   <img src="docs/.vuepress/public/logo.svg" style="width: 300px;">
 </p>
@@ -27,15 +30,17 @@ chartjs-plugin-streaming 2.x requires Chart.js 3.0.0 or later. If you need Chart
 
 ## Development
 
-You first need to install node dependencies (requires [Node.js](https://nodejs.org/)):
+You first need to install node dependencies (requires [Node.js](https://nodejs.org/) - use [nvm](https://github.com/nvm-sh/nvm)):
 
 ```bash
+nvm use # Set the Node.js version as specified in [.nvmrc](./.nvmrc)
 npm install
 ```
 
 The following commands will then be available from the repository root:
 
 ```bash
+nvm use # Set the Node.js version as specified in [.nvmrc](./.nvmrc)
 npm run build      # build dist files
 npm run build:dev  # build and watch for changes
 npm run lint       # perform code linting
@@ -47,3 +52,5 @@ npm run docs:dev   # generate documentation and watch for changes
 ## License
 
 chartjs-plugin-streaming is available under the [MIT license](https://opensource.org/licenses/MIT).
+
+My changes are also under the MIT license (see [LICENSE.md](./LICENSE.md)).
