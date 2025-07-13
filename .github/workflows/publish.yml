@@ -9,11 +9,12 @@ jobs:
     if: github.repository_owner == '1ucky40nc3'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: subdir/package-lock.json
       - run: npm ci
       - run: node scripts/publish-to-npm.js
         env:
